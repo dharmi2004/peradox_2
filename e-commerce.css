@@ -1,0 +1,188 @@
+* {
+    margin: o;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100%;
+
+}
+
+.menu-btn {
+    color: yellow;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar {
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+    background-color: rgb(244, 193, 200);
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+}
+
+.navbar .logo h1 {
+    color: rgb(3, 3, 3);
+    border-bottom: 4px solid rgb(1, 1, 1);
+}
+
+
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a {
+    display: block;
+    margin-left: 20px;
+    color: rgb(10, 9, 9);
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar .menu li a i {
+    color: black;
+}
+
+.navbar .menu li .active {
+    border-bottom: black;
+}
+
+.navbar .menu li .active {
+    border-bottom: 3px solid black;
+}
+
+.navbar .menu li a:hover {
+    border-bottom: 3px solid black;
+}
+
+.content {
+    background-image: url(https://media.istockphoto.com/id/1613649905/photo/photo-portrait-of-pretty-young-girl-hold-shopping-bags-packages-wear-trendy-flower-print.jpg?s=612x612&w=0&k=20&c=PE85hTkUNQDSzz_BaxTW5HFNAGvkAz8vveSTOhtkBPU=);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: black;
+    height: 110vh;
+    margin-top: 10px;
+}
+
+.content h1 {
+    font-size: 34px;
+    margin-top: 20px;
+}
+
+.pheading {
+    text-align: center;
+    margin: 50px 0;
+    color: blueviolet;
+    text-decoration: underline;
+}
+
+.content button {
+    margin-top: 30px;
+    padding: 15px 30px;
+    border: none;
+    background: purple;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sec {
+    padding: 10px 5%;
+
+}
+
+.products .card {
+    width: 310px;
+    background: rgb(252, 214, 221);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.products .card img {
+    height: 250px;
+    width: 100%;
+}
+
+.products .card .desc {
+    padding: 5px 20px;
+    opacity: 0.8;
+}
+
+.products .card .title {
+    font-weight: 900;
+    font-size: 20px;
+    color: black;
+    padding: 0 20px;
+}
+
+.products .card .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.products.card .box .price {
+    color: blueviolet;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.products .card .box .btn {
+    font-size: 13px;
+    color: rgb(246, 81, 108);
+    padding: 10px 18px;
+    font-weight: 900;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.products .card .box .btn:hover {
+    cursor: pointer;
+    background-color: palevioletred;
+    color: aliceblue;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+footer {
+    background-color: gainsboro;
+    height: 10vh;
+}
+
+footer p {
+    align-items: center;
+    
+    line-height: 10vh;
+    text-align: center;
+
+}
+
+footer p a {
+    text-decoration: none;
+    color: rgb(245, 105, 245);
+    font-weight: bold;
+}
